@@ -3,11 +3,10 @@ package main
 import "github.com/01-edu/z01"
 
 func main() {
-
-	i := 0
-	for i <= 9 {
-		z01.PrintRune(i)
+	var i = 48
+	for i <= 57 {
+		z01.PrintRune(rune(i))
 		i++
 	}
-	z01.PrintRune('\n')
+	z01.PrintRune(10)
 }
