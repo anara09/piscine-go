@@ -11,11 +11,11 @@ func PrintComb() {
 				z01.PrintRune(rune(k))
 				if i <= 54 {
 					z01.PrintRune(44)
-					}
-				}
 				}
 			}
+		}
+	}
 	{
-	z01.PrintRune(10)
-}
+		z01.PrintRune(10)
+	}
 }
