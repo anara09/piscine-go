@@ -15,5 +15,7 @@ func PrintComb() {
 			}
 		}
 	}
-	z01.PrintRune(10)	
+	{
+		z01.PrintRune(10)
+	}	
 }
