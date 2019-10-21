@@ -11,7 +11,7 @@ func IterativePower(nb int, power int) int {
 		if power == 1 {
 			return nb
 		}
-		if power >= 1 && nb >= 1 {
+		if power > 1 && nb > 1 {
 			return nb * IterativePower(nb, power-1)
 		}
 	} else {
