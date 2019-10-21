@@ -1,4 +1,4 @@
-package piscine
+package FindNextPrime
 
 func IsPrime(x int) bool {
 	if x == 1 || x == 0 || x < 0 {
