@@ -8,7 +8,6 @@ func IterativeFactorial(nb int) int {
 		if nb > 1 {
 			return nb * IterativeFactorial(nb-1)
 		}
-		return 0
 	} else {
 		return 0
 	}
