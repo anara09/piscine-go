@@ -1,6 +1,11 @@
 package piscine
 
 func Index(s, t string) int {
+	for _, letter2 := range t {
+		if letter2 == '\x00' {
+			return 0
+		}
+	}
 	ln := 0
 	ln2 := 0
 	for _, c := range s {
