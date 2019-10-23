@@ -1,38 +1,15 @@
 package piscine
 
-func Index(s, t string) int {
-	for _, letter2 := range t {
-		if letter2 == '\x00' {
-			return 0
-		}
-	}
-	ln := 0
-	ln2 := 0
-	for _, c := range s {
-		if c == c {
-			ln++
-		}
-	}
+func Index(s string, toFind string) int {
 
-	for _, c := range t {
-		if c == c {
-			ln2++
-		}
-	}
-	for i := 0; i < ln; i++ {
-		if ln2 != 0 && s[i] == t[0] {
-			ok := true
-			cur_ch := 0
-			for j := 0; j < ln2; j++ {
-				if i+cur_ch >= ln || t[j] != s[i+cur_ch] {
-					ok = false
-					break
-				}
-				cur_ch++
-			}
-			if ok == true {
-				return i
-			}
+	j := []rune(s)
+	l := []rune(toFind)
+	n := lent(j)
+	k := lent(l)
+
+	for i := 0; i <= n-k; i++ {
+		if toFind == s[i:i+k] {
+			return (i)
 		}
 	}
 	return -1
