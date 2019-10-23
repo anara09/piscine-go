@@ -6,7 +6,7 @@ func Index(s string, toFind string) int {
 			if letter1 == letter2 && i == j {
 				return i
 			} else if letter1 == letter2 && i != j {
-				return i - j
+				return -1
 			}
 		}
 	}
