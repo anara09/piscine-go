@@ -2,7 +2,7 @@ package piscine
 
 func check5(a rune) bool {
 
-	if a >= 0 && a <= 32 || a == 127 {
+	if a >= 0 && a <= 31 || a == 127 {
 		return true
 	}
 	return false
