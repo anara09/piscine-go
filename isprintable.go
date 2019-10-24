@@ -1,6 +1,6 @@
 package piscine
 
-func check4(a rune) bool {
+func check5(a rune) bool {
 
 	if a >= 0 && a <= 32 || a == 127 {
 		return true
@@ -16,7 +16,7 @@ func IsPrintable(str string) bool {
 	}
 	ch := false
 	for i := 0; i < lens; i++ {
-		if check4(a[i]) == true {
+		if check5(a[i]) == true {
 			ch = true
 			break
 		}
