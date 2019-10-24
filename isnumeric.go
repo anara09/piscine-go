@@ -1,6 +1,6 @@
 package piscine
 
-func check(a rune) bool {
+func check2(a rune) bool {
 
 	if a >= '0' && a <= '9' {
 		return true
@@ -16,7 +16,7 @@ func IsNumeric(str string) bool {
 	}
 	ch := true
 	for i := 0; i < lens; i++ {
-		if check(a[i]) == false {
+		if check2(a[i]) == false {
 			ch = false
 			break
 		}
