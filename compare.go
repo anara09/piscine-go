@@ -14,7 +14,7 @@ func Compare(a, b string) int {
 	for i := 0; i <= n-k; i++ {
 		if b == a[i:i+k] && n == k {
 			return 0
-		} else if b == a[i:i+k] && n > k && b[0] == a[0] {
+		} else if b == a[i:i+k] && b[0] == a[0] {
 			return 1
 		}
 	}
