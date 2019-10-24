@@ -10,10 +10,12 @@ func prim(a rune) bool {
 
 func Capitalize(s string) string {
 	ar := []rune(s)
-
 	letra := true
-
-	for i := 0; i < len(s); i++ {
+	lent := 0
+	for range s {
+		lent++
+	}
+	for i := 0; i < lent; i++ {
 		if prim(ar[i]) == true && letra {
 			if ar[i] >= 'a' && ar[i] <= 'z' {
 				ar[i] = 'A' - 'a' + ar[i]
